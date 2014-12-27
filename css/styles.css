@@ -1,0 +1,9 @@
+#slider {
+  position: relative;
+  width: 720px;
+  overflow: hidden; }
+  #slider #slides {
+    width: 6000px;
+    margin-left: 0px; }
+    #slider #slides .slide {
+      float: left; }
