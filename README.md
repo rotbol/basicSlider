@@ -1,4 +1,4 @@
 basicSlider
 ===========
 
-Basic jquery slider - for practise
+Basic jquery slider - for practise/learning
