@@ -1,0 +1,15 @@
+#slider {
+	position: relative;
+	width: 720px;
+	overflow: hidden;
+
+	#slides {
+		width: 6000px;
+		margin-left: 0px;
+
+
+		.slide {
+			float: left;
+		}
+	}
+}
