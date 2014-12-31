@@ -20,30 +20,35 @@
 </div>
 
 
-<button onclick="stopSlide()">Try it</button>
-
+<button onclick="stopSlide()">Stop it</button>
+<button onclick="startSlide()">Start it</button>
 
 	<script src="bower_components/jquery/dist/jquery.js"></script>
 
 	<script>
 		var slider;
-		var speed = 3000;
+		var speed = 1000;
 		var imageWidth = 720;
 
 
 		$(function() {
-			slider = setInterval(function(){nextSlide()}, speed);
+			startSlide();
+			
 		});
+
+		function startSlide(){
+			slider = setInterval(function(){nextSlide()}, speed);
+		};
 
 		function nextSlide(){
 			var margin = parseInt($("#slides").css("margin-left")) - imageWidth;
-			
+
 			$("#slides").css("margin-left", margin+"px");
-		}
+		};
 
 		function stopSlide(){
 			clearInterval(slider);
-		}
+		};
 
 
 	</script>
