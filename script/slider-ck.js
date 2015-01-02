@@ -1,0 +1,1 @@
+function nextSlide(){var e=parseInt($("#slides").css("margin-left"))-imageWidth;$("#slides").css("margin-left",e+"px")}function startSlide(){slider=setInterval(function(){nextSlide()},speed)}function stopSlide(){clearInterval(slider)}var slider,speed=3e3,imageWidth=720;$(function(){startSlide()});

@@ -24,33 +24,8 @@
 <button onclick="startSlide()">Start it</button>
 
 	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="script/slider-ck.js"></script>
 
-	<script>
-		var slider;
-		var speed = 1000;
-		var imageWidth = 720;
-
-
-		$(function() {
-			startSlide();
-			
-		});
-
-		function startSlide(){
-			slider = setInterval(function(){nextSlide()}, speed);
-		};
-
-		function nextSlide(){
-			var margin = parseInt($("#slides").css("margin-left")) - imageWidth;
-
-			$("#slides").css("margin-left", margin+"px");
-		};
-
-		function stopSlide(){
-			clearInterval(slider);
-		};
-
-
-	</script>
+	
 </body>
 </html>
